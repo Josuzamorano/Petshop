@@ -1,0 +1,954 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*/ arranca inicio /*/
+
+.secundario {
+  color: rgba(240, 159, 10, 0.966);
+}
+
+.primario {
+  color: #48d8e2;
+}
+
+.mascotas {
+  position: absolute;
+  bottom: 150px;
+  left: 35%;
+  width: 550px;
+}
+
+
+nav {
+  background-color: rgba(255, 255, 255, 0.938) !important;
+  z-index: 15;
+}
+
+nav a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 100;
+}
+
+.navbar-toggler {
+  border: white 1px solid !important;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+
+nav img {
+  width: 70px;
+}
+
+nav .active {
+  border-bottom: 4px solid rgba(240, 159, 10, 0.966);
+  border-radius: 2px;
+}
+
+.navDetails {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(33, 115, 130, 1) 1.4%,
+    rgba(35, 39, 124, 1) 90%
+  ) !important;
+}
+
+.fondo_negro {
+  background-color: rgba(0, 0, 0, 0.486);
+  z-index: 13;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+nav a:hover{
+  color: #0dbae6 !important;
+ 
+  transition: all .250s ease;
+-webkit-transition: all .250s ease;
+background-color: #faf6f60a;
+border-radius: 5px;
+
+}
+
+
+
+
+
+
+.header_inicio {
+  z-index: 0;
+  min-height: 100vh;
+  background-image: url(../img/perroOrejasArriba.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.61) 0px -5px 30px;
+}
+
+
+.header_inicioFarmacia {
+  background-image: url(../img/beagle-farmacia.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.61) 0px -5px 30px;
+}
+
+.irACarro {
+
+  padding: 10px !important;
+  background-color: rgb(63, 192, 231) !important;
+  border-radius: 50px;
+
+}
+
+
+.header_inicioJuguetes { background-image: url(../img/fondomostazaperro.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.61) 0px -5px 30px;}
+
+
+
+.header_inicioContacto{
+
+  background-image: url(../img/fondoloro.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.61) 0px -5px 30px;
+
+
+
+}
+
+.header_inicioCarrito{
+
+  background-image: url(../img/2021Animals___Dogs_French_Bulldog_in_suit_on_blue_background_152497_23.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.61) 0px -5px 30px;
+
+
+
+}
+
+#main_carrito {
+  min-height: 70vh !important;
+}
+
+
+
+
+.header_inicio h2 {
+  font-size: 3.5rem !important;
+}
+
+/* carousel */
+
+.carousel-item img {
+  width: 100% !important;
+  height: 600px !important;
+  object-fit: cover;
+  object-position: 0px -80px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.308);
+  border-radius: 20px;
+}
+
+.mainDetalles {
+  min-height: 50vh;
+}
+
+.informacion_inicio {
+  width: 100%;
+  margin: 90px 0px;
+}
+
+.div_informacion_inicio {
+  width: 300px;
+}
+
+.div_informacion_inicio div img {
+  width: 160px;
+}
+
+.datos {
+  padding-top: 50px;
+ min-height: 50vh;
+}
+
+.detalle_index {  
+  position: relative;
+  min-height: 10vh !important;
+}
+
+.detalle_index h2 {
+  position: absolute;
+  left: 35%;
+  bottom: -19px;
+}
+
+/* .texto_datos p {
+} */
+
+.mindyperro {
+  width: 100%;
+  object-fit: cover;
+  object-position: 100%;
+  transform: rotate(-180deg);
+  transform:rotateY(180deg);
+}
+
+/* .informacion_inicio {
+} */
+
+.galeria_inicio img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  width: 450px;
+}
+
+/* .galeria_inicio {
+} */
+
+/*/ arranca juguetes /*/
+
+.btn-agregarCarro {
+
+  border-radius: 180px !important;
+  padding: 10px !important;
+  background-color: #0dbae6 !important;
+
+}
+
+.btn-sacarCarro{
+  
+  border-radius: 180px !important;
+  padding: 10px !important;
+  background-color: #e6260d !important;
+
+  
+}
+
+.btn-cantidadCarro {
+
+  border-radius: 180px !important;
+  padding: 10px !important;
+  background-color:#dfb355 !important;
+
+}
+
+
+  .card{
+background-color: #fdfdfd;
+padding: 5px;
+border-radius: 10px 10px 10px 10px ;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+/* box-shadow: rgb(89, 101, 114) 0px 10px 30px -10px; */
+  }
+
+.card:hover{
+transition-duration:  400ms;
+  box-shadow: rgb(89, 101, 114) 0px 10px 30px -10px;
+}
+
+/* hr{ border: 1px solid rgba(194, 187, 189, 0.856);
+  border-radius: 5px;} */
+
+.card img {
+  height: 200px;
+  width: 100%;
+  border: #d1d1d152 1px solid;
+  border-radius: 20px 20px 5px 5px;
+}
+
+
+.caja{
+width: 100%;
+height: 20vh; 
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.caja input {
+  border: none !important;
+}
+
+
+.btn{
+ 
+  padding: 20px 20px 20px 20px !important;
+border-radius: 5px 5px 5px 20px !important;
+width: 200px;
+height: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(240, 159, 10, 0.965)!important;
+
+border: none;
+margin-top: 10px;
+box-shadow: rgba(224, 155, 27, 0.965) 0px 30px 60px -12px inset, rgba(241, 79, 4, 0.965) 0px 18px 36px -18px inset;
+/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+}
+
+.btnSacar {
+  background-color: #bd5c5c !important;
+  border: 0px;
+  padding: 15px !important;
+  border-radius: 45px !important;
+  margin-top: 17px;
+  color: white;
+}
+
+.btnSacar:hover{
+
+  color: white !important;
+  background-color: #e63b3bc7 !important;
+  cursor:pointer;
+  transition:  .4s ease;
+
+}
+
+
+
+
+.card h5 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  
+}
+
+.textoCard{
+  display: flex;
+  justify-content: space-evenly;
+  height: 35px;
+  width: 250px;
+
+  
+  
+
+}
+
+.barraBusqueda{
+  width: 350px;
+  border-radius: 200px;
+  border: 1px solid rgb(201, 199, 199);
+  box-shadow: rgba(170, 172, 175, 0.3) 0px 0px 0px 1px;
+  
+}
+
+::placeholder{
+  color: #30302d;
+  opacity: 0.320;
+}
+
+.cardFlotante{
+
+/* border-bottom: 1px solid rgba(139, 136, 136, 0.144);
+border-right: 1px solid rgba(139, 136, 136, 0.144);
+border-left: 1px solid rgba(139, 136, 136, 0.144); */
+border-radius: 0px 0px 20px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+flex-direction: column;
+  height: 60px;
+  
+}
+.cardFlotante p {font-size: 18px !important;}
+
+.barraStockConStock{
+  /* background-color:  rgb(66, 68, 68) !important; */
+  border-radius: 20px 20px 0px 0px ;
+  height: 25px !important;
+  /* box-shadow: rgba(44, 44, 49, 0.479) 0px 30px 60px -12px inset, rgba(59, 58, 58, 0.76) 0px 18px 36px -18px inset; */
+  color: transparent;
+  height: 20px;
+}
+
+.barraStock{
+  /* background-color:  rgb(115, 117, 117) !important; */
+  border-radius: 20px 20px 0px 0px ;
+  /* box-shadow: rgba(44, 44, 49, 0.479) 0px 30px 60px -12px inset, rgba(59, 58, 58, 0.76) 0px 18px 36px -18px inset; */
+  
+  height: 25px;
+  font-size: 11px !important;
+  color: #404041 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.explora {
+  background-image: url(https://img.freepik.com/foto-gratis/dormir-beagle-cachorro-perro-sobre-fondo-azul_1150-18196.jpg?w=1480&t=st=1666810137~exp=1666810737~hmac=9aaff735674a2bac60b7b1870f7d6874900b9a3e11ae60f2e7c2e62f1d892dea);
+  background-position-y: -500px ;
+  background-position-x: center ;  
+  background-size: cover;
+  min-height: 50vh;
+
+}
+
+/*/ footer /*/
+
+footer {
+  position: relative;
+}
+
+.footer-clean {  
+  padding: 50px 0;
+  background-color: #fff;
+  color: #4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-clean ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-clean ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity: 1;
+}
+
+.footer-clean .item.social {
+  text-align: right;
+}
+
+.footer-clean .item.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-top: 22px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/*/ arranca contact /*/
+
+.info_contact {
+  margin: 100px 0px;
+}
+
+.contact form {
+  width: 100%;
+}
+
+.info_contact div img {
+  width: 250px;
+}
+
+iframe {
+  border-radius: 25px !important;
+  width: 300px;
+  height: 450px;
+}
+
+input {
+  border-radius: 7px;
+  border: solid 1px rgb(207, 204, 204) !important;
+}
+
+/*/ ARRANCA CARRITO /*/
+
+.barrastockCarrito{
+    border-radius: 6px;
+    width: 342px;
+    height: 35px;
+    text-align: center !important;
+}
+
+.card-carrito {
+  padding: 15px !important;
+  border-top: solid 1px rgba(0, 0, 0, 0.329) !important;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.329) !important;
+  width: 60vw;
+}
+
+#contenedor_cards {
+  min-height: 30vh !important;
+}
+
+/* From uiverse.io by @david-mohseni */
+
+
+
+.flip {
+/* box-shadow: rgba(119, 118, 118, 0.1) 0px 4px 12px; */
+/* border: 1px solid rgba(163, 159, 159, 0.103); */
+  width: 290px;
+  height: 400px;
+  padding: 10px;
+  transform-style: preserve-3d;
+  transition: 1.5s ease;
+  border-radius: 20px 20px 8px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+  
+
+}
+
+.flip:hover {
+  transform: rotateY(180deg);
+}
+/* Content */
+.flip .content {
+  transform-style: preserve-3d;
+}
+
+.flip img {
+  height: 250px;
+
+  margin-top: 6px;
+  /* border-top: 1px solid rgba(139, 136, 136, 0.144);
+  border-right: 1px solid rgba(139, 136, 136, 0.144);
+  border-left: 1px solid rgba(139, 136, 136, 0.144); */
+  border-radius: 20px 20px 0px 0px;
+}
+
+.flip .back, .flip .front {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+  gap: 16px;
+}
+
+.flip .back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.flip h2,
+.flip p {
+  transform: translateZ(90px);
+  text-align: center;
+}
+
+.flip h2 {
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.flip p {
+  font-weight: 200;
+  font-size: 16px;
+  color: black;
+  line-height: 1.6em;
+}
+
+.flip::before,
+.flip::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg)translateZ(1px);
+}
+
+
+.flip::before {
+  border-radius: 20px;
+  transform: none;
+  background-image: linear-gradient(rgb(13, 3, 103)et, #48d8e2);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* TERMINA CARD */
+.btn-limpiar {
+
+  background-color: rgb(216, 216, 216) !important;
+  border: none !important;
+
+}
+
+.btn-comprar {
+
+  background-color: rgb(216, 216, 216) !important;
+  border: none !important;
+
+}
+
+
+.agregar-carro {
+
+  background-color: #413f3f  !important;
+  border: 0px;
+  padding: 20px 20px 20px 20px !important;
+  border-radius: 5px 5px 20px 5px !important;
+  width: 90px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(95, 95, 94, 0.349) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+}
+.agregar-carro:hover{
+  background-color: #c71d1d !important;
+  
+}
+
+
+
+.btn-borrar {
+  border: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.tarjeta {
+  max-width: 65vw;
+  margin: 48px auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.contenido {
+  display: flex;
+}
+@media (max-width: 1024px){
+  .contenido{
+  flex-direction: column;
+  }
+  .tarjeta {
+   max-width: 95vw;
+  }
+}
+.ladoIzq, .ladoDer {
+  width: 100%;
+}
+.ladoDer img {
+  width: 100%;
+  height: 100%;
+  border-style: none;
+}
+.ladoIzq {
+  background: rgb(41, 37, 37);
+  color: white;
+  padding: 48px
+}
+.btn {
+  display: flex;
+ /*  display: inline-block; */
+  margin-right: 4px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 18px;
+}
+a.btn{
+   text-decoration: none;
+}
+a.btn:first-of-type {
+   background: #5252b4;
+   color: white;
+}
+a.btn:hover{
+   opacity: 0.8;
+   background-color: #66bb2d !important;
+   box-shadow: none;
+   transition:  .4s ease;
+   box-shadow: rgba(50, 50, 93, 0.055) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+   
+   
+}
+
+/*/ ARRANCA MEDIA QUERY /*/
+
+/*/ Small devices (landscape phones, 576px and up)/*/
+
+@media (min-width: 576px) {
+  iframe {
+    border-radius: 25px !important;
+    width: 475px;
+    height: 450px;
+  }
+}
+
+/*/ Medium devices (tablets, 768px and up) /*/
+@media (min-width: 768px) {
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer-clean .item.social {
+    text-align: center;
+  }
+
+  .footer-clean .item.social > a {
+    margin-top: 10px;
+  }
+
+  .texto_datos {
+    width: 60%;
+  }
+
+  iframe {
+    border-radius: 25px !important;
+    width: 575px;
+    height: 450px;
+  }
+
+ 
+}
+
+/*/ Large devices (desktops, 992px and up) /*/
+@media (min-width: 992px) {
+  .footer-clean .item.social > a {
+    margin-top: 40px;
+  }
+
+  .footer-clean .item.social > a {
+    margin-top: 40px;
+  }
+}
+
+/*/ X-Large devices (large desktops, 1200px and up) /*/
+@media (min-width: 1200px) {
+  .contact form {
+    width: 40%;
+  }
+}
+
+/*/ XX-Large devices (larger desktops, 1400px and up) /*/
+@media (min-width: 1400px) {
+  .texto_datos {
+    width: 33%;
+  }
+}
+
+.p-2{font-family: "DM Sans", sans-serif;;}
+
+  input[type=range] {
+    height: 33px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px #50555C;
+    background: rgb(63, 192, 231) !important;
+    border-radius: 15px;
+    border: 0px solid #FFFFFF;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #FFFFFF;
+    border: 0px solid #30302d;
+    height: 27px;
+    width: 15px;
+    border-radius: 20px;
+    background: #fffcfc;
+    box-shadow: rgba(226, 227, 228, 0.3) 0px 0px 0px 3px;
+    cursor: pointer;
+    margin-top: -8.5px;
+    
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #9aa3a3;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px #50555C;
+    background: #313030;
+    border-radius: 15px;
+    border: 0px solid #FFFFFF;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #FFFFFF;
+    border: 0px solid #FFFFFF;
+    height: 27px;
+    width: 15px;
+    border-radius: 20px;
+    background: #dfb355;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #b92f2f;
+    border: 0px solid #b12b2b;
+    border-radius: 30px;
+    box-shadow: 0px 0px 1px #50555C;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #E8E8E8;
+    border: 0px solid #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 0px 0px 1px #50555C;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #FFFFFF;
+    border: 0px solid #FFFFFF;
+    height: 27px;
+    width: 15px;
+    border-radius: 20px;
+    background: #dfb355;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #E8E8E8;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #E8E8E8;
+  }
+
+
+  
+
+  /* /----------------------------------------------------------------* Arranca mediaqueri *-------------------------------------/ */
+
+
+ 
+
+  
+@media (max-width: 991px) {
+
+    
+
+  .navMovil{
+    background-color: #212222da !important;
+  border-radius: 5px 5px 25px 25px;
+  backdrop-filter: blur(10px);
+
+  }
+
+
+
+}
+
+@media (max-width: 470px) {
+
+    
+
+
+  .galeria_inicio img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    width: 300px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
